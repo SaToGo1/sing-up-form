@@ -1,0 +1,59 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    margin: 0;
+}
+
+.content{
+    height: 100vh;
+    border: 5px solid black;
+    display: flex;
+}
+
+.right-side{
+    border: 1px solid red;
+    width: 65%;
+}
+
+.left-side{
+    border: 1px solid red;
+    width: 35%;
+}
+
+.logo-container{
+    border: 1px solid blue;
+}
+
+.logo{
+    border: 1px solid cyan;
+}
+
+.logo-text{
+    border: 1px solid cyan;
+}
+
+.image-footer{
+    border: 1px solid purple;
+}
+
+.top-form{
+    border: 1px solid cyan;
+    height: 33%;
+}
+
+.mid-form{
+    border: 1px solid cyan;
+    height: 33%;
+}
+
+.bot-form{
+    border: 1px solid cyan;
+    height: 32%;
+}
