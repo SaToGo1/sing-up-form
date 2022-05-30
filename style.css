@@ -45,6 +45,11 @@ body {
     background: #00000050; 
     width: 100%;
     border: 1px solid blue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 .logo{
