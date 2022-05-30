@@ -6,7 +6,16 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-  
+
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('./fonts/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('./fonts/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     margin: 0;
 }
@@ -58,6 +67,9 @@ body {
 
 .logo-text{
     border: 1px solid cyan;
+
+    font-family: 'alex_brushregular', sans-serif, Georgia;
+    font-size: 40px;
 }
 
 .image-footer{
