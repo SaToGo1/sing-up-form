@@ -79,6 +79,14 @@ body {
     color: #FFF;
 }
 
+.image-footer a{
+    color: #AAA;    
+}
+
+.image-footer a:hover{
+    color: #666;    
+}
+
 /* ***********************
         RIGHT SIDE
    *********************** */
