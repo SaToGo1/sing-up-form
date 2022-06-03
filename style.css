@@ -91,7 +91,6 @@ body {
         RIGHT SIDE
    *********************** */
 .right-side{
-    border: 1px solid red;
     width: 65%;
 
     display: flex;
@@ -99,9 +98,17 @@ body {
 }
 
 .top-form{
-    border: 1px solid cyan;
-
     flex: 1;
+
+    color: #e28743;
+    background-color: #111;
+    font-size: 20px;
+
+    display: flex;
+}
+
+.top-text{
+    margin: auto 20% 5% 3%;
 }
 
 .mid-form{
@@ -112,6 +119,6 @@ body {
 
 .bot-form{
     border: 1px solid cyan;
-    
+
     flex: 1;
 }
