@@ -22,7 +22,7 @@ body {
 
 .content{
     height: 100vh;
-    border: 2px solid black;
+    border: 1px solid black;
     display: flex;
 }
 
@@ -31,7 +31,7 @@ body {
    *********************** */
 .left-side{
     position: relative;
-    width: 35%;
+    width: 40%;
 
 }
 
@@ -91,7 +91,7 @@ body {
         RIGHT SIDE
    *********************** */
 .right-side{
-    width: 65%;
+    width: 60%;
 
     display: flex;
     flex-direction: column;
@@ -102,34 +102,46 @@ body {
 
     color: #e28743;
     background-color: #111;
-    font-size: 20px;
+    font-size: 1.3em;
 
     display: flex;
 }
 
 .top-text{
-    margin: auto 20% 5% 3%;
-}
-
-.mid-bot-form{
-    flex: 2;
+    margin: auto 20% 4% 4%;
 }
 
 .form{
-    height: 100%;
-    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+}
+
+.mid-form{
+    background-color: #222;
+    padding: 20px;
+
+    flex: 1;
+
     display: flex;
     flex-direction: column;
 }
 
-.mid-form{
-    border: 1px solid cyan;
+.mid-form p{
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+.bot-form{
+    background-color: #111;
+    color: #CCC;
 
     flex: 1;
 }
 
-.bot-form{
-    border: 1px solid cyan;
+.input{
+    display: flex;
+    flex-direction: column;
 
-    flex: 1;
+    color: #DDD
 }

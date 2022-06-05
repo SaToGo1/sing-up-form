@@ -32,35 +32,44 @@
                 </div>
             </div>
 
-            <div class="mid-bot-form">
-                <form action="post" class="form">
-
-                    <div class="mid-form">
+            <div class="mid-form">
+                <p>Let's do this!</p>
+                <form action="post" class="form" id="myForm">
+                    <div class="input">
                         <label for="name">First name: </label>
                         <input type="text" id="name" name="name">
+                    </div>
 
+                    <div class="input">
                         <label for="last-name">Last name: </label>
                         <input type="text" id="last-name" name="last-name">
+                    </div>
 
+                    <div class="input">
                         <label for="mail">E-mail: </label>
                         <input type="email" id="mail" name="mail">
+                    </div>
 
+                    <div class="input">
                         <label for="phone-number">Phone number: </label>
                         <input type="tel" id="phone-number" name="phone-number">
+                    </div>
 
+                    <div class="input">
                         <label for="password">Password: </label>
                         <input type="password" id="password" name="password">
+                    </div>
 
+                    <div class="input">
                         <label for="confirm-password">Confirm password: </label>
                         <input type="password" id="confirm-password" name="confirm-password">
                     </div>
-
-                    <div class="bot-form">
-                        <button type="submit">Create an Account</button>
-                        <p>Already have and account? <a href="#">Log in</a></p>
-                    </div>
-
                 </form>
+            </div>
+
+            <div class="bot-form">
+                <button type="submit" form="myForm">Create an Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
     </div>
