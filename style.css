@@ -196,3 +196,28 @@ body {
 .bot-form a:active {
     color: var(--color-dark-orange);
 }
+
+.form label {
+    margin-bottom: 8px;
+}
+
+.form input{
+    background-color: var(--color-bg-dark-black);
+    color: var(--color-light-orange);
+
+    border: none;
+    border-radius: 8px;
+
+    width: 100%;
+    padding: 5px 10px;
+
+    font-size: 14px;
+    
+}
+
+.form input:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+    outline: 2px solid var(--color-dark-orange);
+}
