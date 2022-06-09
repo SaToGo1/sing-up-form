@@ -149,6 +149,8 @@ body {
     flex-direction: column;
 
     color: var(--color-letter-dark-white);
+
+    position: relative;
 }
 
 .bot-form{
@@ -209,10 +211,10 @@ body {
     border-radius: 8px;
 
     width: 100%;
-    padding: 5px 10px;
+    padding: 5px 30px;
+    text-align: center;
 
     font-size: 14px;
-    
 }
 
 .form input:focus{
@@ -220,4 +222,52 @@ body {
     box-shadow: none;
     outline: none;
     outline: 2px solid var(--color-dark-orange);
+}
+  
+input:valid {
+    background-image: url(img/check.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 5px;
+}
+
+/* When placeholder is not show and input it's invalid we show red border*/
+/* That way we don't show red border when input it's empty if we have placeholder*/
+/* If we don't want a place holder we can put placeholder=" " */
+input:invalid:not(:focus):not(:placeholder-shown) {
+    background-image: url(img/cross.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 5px;
+}
+
+input:invalid:focus:not(:placeholder-shown){
+    background-image: url(img/cross.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 5px;
+}
+
+/* ****************************
+We hide requirements and we show it when input is
+invalid and we are focusing input.
+**************************** */
+
+.requirements{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 60px;
+}
+
+.requirements p{
+    font-size: 10px;
+    font-style: italic;
+    color: #FF000000;
+    padding: 0;
+    margin: 0;
+}
+
+input:invalid:focus:not(:placeholder-shown) + .requirements > p {
+    color: #FF0000FF;
 }

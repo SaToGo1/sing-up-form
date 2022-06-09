@@ -37,38 +37,58 @@
                 <form class="form" id="myForm">
                     <div class="input">
                         <label for="name">First name: </label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" pattern="^[A-Za-z]{1,15}$" placeholder="example: James" required>
+                        <div class="requirements">
+                            <p>Use only letters</p>
+                        </div>
                     </div>
 
                     <div class="input">
                         <label for="last-name">Last name: </label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" pattern="^[A-Za-z]{1,15}$" placeholder="example: Kirk" required>
+                        <div class="requirements">
+                            <p>Use only letters</p>
+                        </div>
                     </div>
 
                     <div class="input">
                         <label for="mail">E-mail: </label>
-                        <input type="email" id="mail" name="mail">
+                        <input type="email" id="mail" name="mail" placeholder="example: name@email.com" required>
+                        <div class="requirements">
+                            <p>Use a valid e-mail address</p>
+                        </div>
                     </div>
 
                     <div class="input">
                         <label for="phone-number">Phone number: </label>
-                        <input type="tel" id="phone-number" name="phone-number">
+                        <input type="tel" id="phone-number" name="phone-number" pattern="\d{10}" placeholder="example: 2637483992" required>
+                        <div class="requirements">
+                            <p>Use 10 numbers</p>
+                        </div>
                     </div>
 
                     <div class="input">
                         <label for="password">Password: </label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder=" " required>
+                        <div class="requirements">
+                            <p> Use 1 capital letter</p>
+                            <p> Use 1 number</p>
+                            <p> Use at least 8 caracters</p>
+                        </div>
                     </div>
 
                     <div class="input">
                         <label for="confirm-password">Confirm password: </label>
-                        <input type="password" id="confirm-password" name="confirm-password">
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder=" " required>
+                        <div class="requirements">
+                            <p>Passwords do not match</p>
+                        </div>
                     </div>
                 </form>
             </div>
 
             <div class="bot-form">
-                <button type="submit" form="myForm">Create an Account</button>
+                <button id="button" type="submit" form="myForm">Create an Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
